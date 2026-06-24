@@ -5,11 +5,11 @@ function counter() {
 
   return {
     increment: function () {
-      return counter += 1
+       counter += 1
     },
 
     decrement: function () {
-      return counter -= 1
+       counter -= 1
     },
 
     getValue: function () {
@@ -19,6 +19,13 @@ function counter() {
 }
 
 let newcount = counter()
+let secomdcount = counter()
+
+console.log(secomdcount.increment());
+console.log(secomdcount.increment());
+console.log(secomdcount.increment());
+console.log(secomdcount.getValue());
+
 
 console.log(newcount.increment())
 console.log(newcount.increment())
